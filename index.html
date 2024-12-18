@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Pushkar Niraula" />
+    <meta
+      name="description"
+      content="A sleek and modern music player built using HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="music player, audio, HTML, CSS, JavaScript, soundwave, tune box"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#181818" />
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio
+      class="audio"
+      src="./audios/yung kai - blue (Official Music Video).mp3"
+    ></audio>
+    <audio
+      class="audio"
+      src="./audios/ROSÉ & Bruno Mars - APT. (Official Music Video).mp3"
+    ></audio>
+    <div class="container">
+      <h1 class="player-title">Music Player</h1>
+      <div class="main">
+        <div class="music-player">
+          <div class="song-info">
+            <p class="song-name">Blue</p>
+            <p class="artists">Yung Kai</p>
+          </div>
+          <div class="song-controls">
+            <div class="song-time">
+              <p>
+                <input
+                  type="range"
+                  value="0"
+                  min="0"
+                  step="0.1"
+                  name=""
+                  class="slider"
+                  id="slider"
+                />
+              </p>
+              <p class="current-time">0:00</p>
+            </div>
+            <div class="controls">
+              <p>
+                <button class="previous">
+                  <i class="fa fa-step-backward fa-2x" aria-hidden="true"></i>
+                </button>
+              </p>
+              <p>
+                <button class="play-pause">
+                  <i class="fa fa-play fa-2x"></i>
+                </button>
+              </p>
+              <p>
+                <button class="next">
+                  <i class="fa fa-step-forward fa-2x" aria-hidden="true"></i>
+                </button>
+              </p>
+              <!-- <p>
+                <button class="volume">
+                  <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
+                </button>
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="song-lists">
+          <p class="songs">Blue <span class="artist">Yung Kai</span></p>
+          <p class="songs">
+            Apt Apt <span class="artist">Rose and Bruno Mars</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          @Copyright 2024
+          <a href="https://pushkarniraula.com.np">Pushkar Niraula</a>
+        </div>
+        <div>
+          <a href="">Github</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
