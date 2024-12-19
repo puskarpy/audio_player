@@ -7,6 +7,9 @@
   font-family: "Poppins", serif;
   color: white;
 }
+body{
+  height: 100vh;
+}
 .container {
   width: 100%;
   background: linear-gradient(135deg, #1db954, #121212);
